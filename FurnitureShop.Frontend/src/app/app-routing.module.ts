@@ -5,6 +5,7 @@ import {FurnitureListComponent} from "./components/tables/furniture-list/furnitu
 import {ContractsListComponent} from "./components/contracts/contracts-list/contracts-list.component";
 import {AddContractComponent} from "./components/contracts/add-contract/add-contract.component";
 import {EditContractComponent} from "./components/contracts/edit-contract/edit-contract.component";
+import {ReportComponent} from "./components/report/report.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/contracts', pathMatch: 'full'},
@@ -13,6 +14,7 @@ const routes: Routes = [
   {path: 'contracts', component: ContractsListComponent, pathMatch: 'full'},
   {path: 'contracts/create', component: AddContractComponent, pathMatch: 'full'},
   {path: 'contracts/:number', component: EditContractComponent, pathMatch: 'full'},
+  {path: 'report', component: ReportComponent, pathMatch: 'full'},
   {path: '**', redirectTo: '/contracts'}
 ];
 

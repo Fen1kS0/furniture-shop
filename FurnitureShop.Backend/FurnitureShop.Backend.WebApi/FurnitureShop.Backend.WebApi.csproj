@@ -19,6 +19,7 @@
       <ProjectReference Include="..\FurnitureShop.Backend.BL\FurnitureShop.Backend.BL.csproj" />
       <ProjectReference Include="..\FurnitureShop.Backend.DataAccess\FurnitureShop.Backend.DataAccess.csproj" />
       <ProjectReference Include="..\FurnitureShop.Backend.Common\FurnitureShop.Backend.Common.csproj" />
+      <ProjectReference Include="..\FurnitureShop.Backend.Report\FurnitureShop.Backend.Report.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -28,6 +29,10 @@
       <Content Update="appsettings.Development.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Files\Reports" />
     </ItemGroup>
 
 </Project>

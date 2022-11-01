@@ -1,0 +1,27 @@
+<form>
+  <div class="input-group my-3 btn-group">
+    <h1>Скачать отчёт</h1>
+  </div>
+
+  <mat-form-field class="input-group mb-3" appearance="fill">
+    <mat-label>Дата заключения</mat-label>
+    <input matInput [matDatepicker]="startDatePicker" [formControl]="startDate">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
+    <mat-datepicker #startDatePicker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="input-group mb-3" appearance="fill">
+    <mat-label>Дата исполнения</mat-label>
+    <input matInput [matDatepicker]="endDatePicker" [formControl]="endDate">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
+    <mat-datepicker #endDatePicker></mat-datepicker>
+  </mat-form-field>
+
+
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-primary me-1" (click)="download()" target="_blank">Скачать</button>
+    <button class="btn btn-secondary" routerLink="/contracts">Вернуться</button>
+  </div>
+</form>

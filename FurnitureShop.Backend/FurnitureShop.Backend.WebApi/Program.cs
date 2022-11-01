@@ -1,6 +1,7 @@
 using FluentValidation.AspNetCore;
 using FurnitureShop.Backend.BL;
 using FurnitureShop.Backend.DataAccess;
+using FurnitureShop.Backend.Report;
 using FurnitureShop.Backend.WebApi;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,6 +18,7 @@ builder.Services.AddDataContext(builder.Configuration);
 builder.Services.AddServices();
 builder.Services.AddMappings();
 builder.Services.AddValidators();
+builder.Services.AddReportService();
 
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();

@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureShop.Backend.BL", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureShop.Backend.Common", "FurnitureShop.Backend.Common\FurnitureShop.Backend.Common.csproj", "{5E5D821D-9697-44AE-B13B-252A5625BA2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureShop.Backend.Report", "FurnitureShop.Backend.Report\FurnitureShop.Backend.Report.csproj", "{42823ABE-199D-425D-B13C-E2EE07BB162D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{5E5D821D-9697-44AE-B13B-252A5625BA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E5D821D-9697-44AE-B13B-252A5625BA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E5D821D-9697-44AE-B13B-252A5625BA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42823ABE-199D-425D-B13C-E2EE07BB162D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42823ABE-199D-425D-B13C-E2EE07BB162D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42823ABE-199D-425D-B13C-E2EE07BB162D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42823ABE-199D-425D-B13C-E2EE07BB162D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

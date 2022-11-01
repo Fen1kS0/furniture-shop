@@ -38,6 +38,7 @@ import { SaleCardComponent } from './components/cards/sale-card/sale-card.compon
 import { AddSaleDialogComponent } from './components/dialogs/sale/add-sale-dialog/add-sale-dialog.component';
 import { EditContractComponent } from './components/contracts/edit-contract/edit-contract.component';
 import { AddContractComponent } from './components/contracts/add-contract/add-contract.component';
+import { ReportComponent } from './components/report/report.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { AddContractComponent } from './components/contracts/add-contract/add-co
     SaleCardComponent,
     AddSaleDialogComponent,
     EditContractComponent,
-    AddContractComponent
+    AddContractComponent,
+    ReportComponent
   ],
     imports: [
         BrowserModule,
