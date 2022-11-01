@@ -1,0 +1,47 @@
+<form *ngIf="buyers">
+  <div class="input-group my-3 btn-group">
+    <h1>{{title}}</h1>
+  </div>
+
+  <mat-form-field class="input-group mb-3" appearance="fill">
+    <mat-label>Дата заключения</mat-label>
+    <input matInput [matDatepicker]="issueDatePicker" [formControl]="issueDate">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="issueDatePicker"></mat-datepicker-toggle>
+    <mat-datepicker #issueDatePicker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field class="input-group mb-3" appearance="fill">
+    <mat-label>Дата исполнения</mat-label>
+    <input matInput [matDatepicker]="dueDatePicker" [formControl]="dueDate">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matSuffix [for]="dueDatePicker"></mat-datepicker-toggle>
+    <mat-datepicker #dueDatePicker></mat-datepicker>
+  </mat-form-field>
+
+  <div class="input-group mb-3 btn-group">
+    <div ngbDropdown class="d-inline-block btn-group">
+      <button ngbDropdownToggle type="button" class="btn btn-outline-primary" id="dropdownBuyer">
+        Заказчики
+      </button>
+      <div ngbDropdownMenu aria-labelledby="dropdownBuyer">
+        <button ngbDropdownItem *ngFor="let buyer of buyers" (click)="selectBuyer(buyer)">{{buyer.name}}</button>
+      </div>
+    </div>
+    <input type="text" class="form-control" [value]="selectedBuyer ? selectedBuyer.name : ''" readonly>
+  </div>
+
+  <div class="mb-3">
+    <h4 class="form-label">Продажи:</h4>
+    <app-sale-card *ngFor="let sale of sales" [sale]="sale" [deleteCallback]="deleteSale.bind(this)"></app-sale-card>
+    <button class="btn btn-success" (click)="addSale()">Добавить продажу</button>
+  </div>
+
+  <div class="d-flex justify-content-end">
+    <button class="btn btn-primary me-1" (click)="save()">{{nameSaveButton}}</button>
+    <button class="btn btn-secondary" routerLink="/contracts">Вернуться</button>
+  </div>
+</form>
+
+
+

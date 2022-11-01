@@ -1,0 +1,10 @@
+<div class="mt-1">
+  <app-contract-card
+    *ngFor="let contract of contracts$ | async"
+    [contract]="contract"
+    [detailsCallback]="showDetails.bind(this)"
+    [deleteCallback]="deleteContract.bind(this)"
+  ></app-contract-card>
+</div>
+
+

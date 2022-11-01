@@ -1,0 +1,11 @@
+<div class="card mb-1">
+  <div class="card-body text-dark row d-flex justify-content-around">
+
+    <div class="col-11 row d-flex justify-content-around">
+      <p class="col-11 m-0">{{sale.furnitureName}}</p>
+      <p class="col-1 m-0">{{sale.count}} шт.</p>
+    </div>
+
+    <button type="button" class="btn btn-close col-1" (click)="deleteCallback(sale.contractNumber, sale.furnitureModel)"></button>
+  </div>
+</div>

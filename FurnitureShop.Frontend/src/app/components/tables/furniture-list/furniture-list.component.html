@@ -1,0 +1,44 @@
+<table cdk-table matSort [dataSource]="dataSource" class="table table-bordered">
+  <ng-container matColumnDef="model">
+    <th cdk-header-cell *matHeaderCellDef mat-sort-header="model" class="col-1">Модель</th>
+    <td cdk-cell *matCellDef="let element"> {{element.model}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="name">
+    <th cdk-header-cell *matHeaderCellDef mat-sort-header="name" class="col-3">Название</th>
+    <td cdk-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="price">
+    <th cdk-header-cell *matHeaderCellDef mat-sort-header="price" class="col-1">Цена</th>
+    <td cdk-cell *matCellDef="let element"> {{element.price}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="characteristics" class="col-6">
+    <th cdk-header-cell *matHeaderCellDef mat-sort-header="characteristics">Характеристики</th>
+    <td cdk-cell *matCellDef="let element"> {{element.characteristics}} </td>
+  </ng-container>
+
+  <!-- actions -->
+  <ng-container matColumnDef="actions">
+    <th cdk-header-cell *matHeaderCellDef class="col-1 text-center">
+      <button class="fs-4 btn w-100" (click)="addNew()">
+        <i class="bi bi-plus-circle w-100"></i>
+      </button>
+    </th>
+
+    <td cdk-cell *matCellDef="let element">
+      <button class="btn" (click)="startEdit(element)">
+        <i class="bi bi-pencil"></i>
+      </button>
+
+      <button class="btn" (click)="deleteItem(element)">
+        <i class="bi bi-trash"></i>
+      </button>
+    </td>
+  </ng-container>
+
+  <tr cdk-header-row *matHeaderRowDef="displayedColumns" class="table-light"></tr>
+  <tr cdk-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureShop.Backend.WebApi", "FurnitureShop.Backend.WebApi\FurnitureShop.Backend.WebApi.csproj", "{24A232E6-1A93-4A9D-8292-EEB71A5C997C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureShop.Backend.DataAccess", "FurnitureShop.Backend.DataAccess\FurnitureShop.Backend.DataAccess.csproj", "{8DF382E1-BF45-4EFE-AA89-1F64719054D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureShop.Backend.BL", "FurnitureShop.Backend.BL\FurnitureShop.Backend.BL.csproj", "{74DE66DB-AE37-41FD-B368-77779F377751}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FurnitureShop.Backend.Common", "FurnitureShop.Backend.Common\FurnitureShop.Backend.Common.csproj", "{5E5D821D-9697-44AE-B13B-252A5625BA2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24A232E6-1A93-4A9D-8292-EEB71A5C997C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24A232E6-1A93-4A9D-8292-EEB71A5C997C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24A232E6-1A93-4A9D-8292-EEB71A5C997C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24A232E6-1A93-4A9D-8292-EEB71A5C997C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DF382E1-BF45-4EFE-AA89-1F64719054D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF382E1-BF45-4EFE-AA89-1F64719054D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF382E1-BF45-4EFE-AA89-1F64719054D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF382E1-BF45-4EFE-AA89-1F64719054D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DE66DB-AE37-41FD-B368-77779F377751}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DE66DB-AE37-41FD-B368-77779F377751}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DE66DB-AE37-41FD-B368-77779F377751}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DE66DB-AE37-41FD-B368-77779F377751}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5D821D-9697-44AE-B13B-252A5625BA2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5D821D-9697-44AE-B13B-252A5625BA2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5D821D-9697-44AE-B13B-252A5625BA2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5D821D-9697-44AE-B13B-252A5625BA2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

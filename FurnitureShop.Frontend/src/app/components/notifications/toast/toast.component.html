@@ -1,0 +1,19 @@
+<ngb-toast
+  *ngFor="let toast of toasts"
+
+  class="position-fixed bottom-0 end-0 p-2 m-4"
+  style="z-index: 1200"
+  [ngClass]="styles.get(toast.type)"
+
+  [autohide]="true"
+  [delay]="toast.delay || 5000"
+  (hidden)="remove(toast)"
+>
+  <div class="toast-header">
+    <strong class="me-auto">{{toast.header}}</strong>
+    <button type="button" class="btn-close" (click)="remove(toast)"></button>
+  </div>
+  <div class="toast-body">
+    {{toast.body}}
+  </div>
+</ngb-toast>
