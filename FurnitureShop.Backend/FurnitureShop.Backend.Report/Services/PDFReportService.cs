@@ -26,22 +26,22 @@ public class PdfReportService : IReportService
         PdfVerticalAlignment.Middle
     );
     
-    private readonly PdfTrueTypeFont _titleFont = new PdfTrueTypeFont(
+    private readonly PdfTrueTypeFont _titleFont = new (
         new Font("Times New Roman", 14f, FontStyle.Bold), 
         true
     );
 
-    private readonly PdfTrueTypeFont _regularFont = new PdfTrueTypeFont(
+    private readonly PdfTrueTypeFont _regularFont = new (
         new Font("Times New Roman", 12f, FontStyle.Regular), 
         true
     );
 
-    private readonly PdfTrueTypeFont _italicFont = new PdfTrueTypeFont(
+    private readonly PdfTrueTypeFont _italicFont = new (
         new Font("Times New Roman", 12f, FontStyle.Italic),
         true
     );
 
-    private readonly PdfTrueTypeFont _boltFont = new PdfTrueTypeFont(
+    private readonly PdfTrueTypeFont _boltFont = new (
         new Font("Times New Roman", 12f, FontStyle.Bold),
         true
     );
@@ -75,7 +75,7 @@ public class PdfReportService : IReportService
         InsertNote(doc.Pages[0], 40);
         
         //Draw table on the page
-        table.Draw(page, new PointF(0, 90));
+        table.Draw(page, new PointF(0, 100));
 
 
         //Save the document to a PDF file
@@ -108,7 +108,7 @@ public class PdfReportService : IReportService
 
     private void InsertNote(PdfPageBase page, float y)
     {
-        RectangleF noteRect = new RectangleF(0, y, page.Canvas.ClientSize.Width, 50);
+        RectangleF noteRect = new RectangleF(0, y, page.Canvas.ClientSize.Width, 60);
         PdfStringFormat leftAlignment = new PdfStringFormat(PdfTextAlignment.Left, PdfVerticalAlignment.Top);
         PdfStringFormat rightAlignment = new PdfStringFormat(PdfTextAlignment.Right, PdfVerticalAlignment.Top);
 

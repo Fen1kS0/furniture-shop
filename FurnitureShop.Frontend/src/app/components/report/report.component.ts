@@ -32,9 +32,12 @@ export class ReportComponent implements OnInit {
   }
 
   download() {
-    let start = (this.startDate.value as Date).toISOString()
-    let end = (this.endDate.value as Date).toISOString()
-    let url = environment.API_URL + 'files/report?start=' + start + '&end=' + end
+    let start = (this.startDate.value as Date)
+    let end = (this.endDate.value as Date)
+
+    end.setHours(23, 59, 59)
+
+    let url = environment.API_URL + 'files/report?start=' + start.toISOString() + '&end=' + end.toISOString()
     window.open(url, '_blank')
   }
 }

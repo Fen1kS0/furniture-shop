@@ -4,7 +4,7 @@
   </div>
 
   <mat-form-field class="input-group mb-3" appearance="fill">
-    <mat-label>Дата заключения</mat-label>
+    <mat-label>Дата начала</mat-label>
     <input matInput [matDatepicker]="startDatePicker" [formControl]="startDate">
     <mat-hint>MM/DD/YYYY</mat-hint>
     <mat-datepicker-toggle matSuffix [for]="startDatePicker"></mat-datepicker-toggle>
@@ -12,7 +12,7 @@
   </mat-form-field>
 
   <mat-form-field class="input-group mb-3" appearance="fill">
-    <mat-label>Дата исполнения</mat-label>
+    <mat-label>Дата конца</mat-label>
     <input matInput [matDatepicker]="endDatePicker" [formControl]="endDate">
     <mat-hint>MM/DD/YYYY</mat-hint>
     <mat-datepicker-toggle matSuffix [for]="endDatePicker"></mat-datepicker-toggle>
